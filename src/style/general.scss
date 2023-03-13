@@ -1,4 +1,5 @@
 // Reset
+@use '../style/partials/variables.scss' as *;
 
 *{
     margin: 0;
@@ -31,9 +32,44 @@ a{
     margin: 0 auto;
 }
 
+.container-medium {
+    max-width: 1172px;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 570px;
+    margin: 0 auto;
+}
 
 // General
 .row{
     display: flex;
     flex-wrap: wrap;
+}
+
+.col-3{
+    flex-basis: calc(100% / 4);
+}
+
+.italics-text{
+    font-style: italic;
+    font-weight: 200;
+    text-transform: capitalize;
+    color: $secondary-color;
+}
+
+
+.button{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 40px;
+    line-height: 60px;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+
+.button-primary{
+    color: white;
+    background-color: $primary-color;
 }

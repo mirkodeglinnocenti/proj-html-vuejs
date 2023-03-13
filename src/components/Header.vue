@@ -44,6 +44,9 @@
 
 .main-header{
     padding: 28px;
+    background-color: white;
+    position: sticky;
+    top: 0;
 
     img{
         width: 160px;
