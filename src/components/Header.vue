@@ -13,11 +13,11 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <ul class="row">
-                        <li><a href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
-                        <li><a href="#"><font-awesome-icon icon="fa-brands fa-facebook-f" /></a></li>
-                        <li><a href="#"><font-awesome-icon icon="fa-brands fa-instagram" /></a></li>
-                        <li><a href="#"><font-awesome-icon icon="fa-brands fa-linkedin" /></a></li>
+                    <ul class="social-icons row">
+                        <li><a class="icon" href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
+                        <li><a class="icon" href="#"><font-awesome-icon icon="fa-brands fa-facebook-f" /></a></li>
+                        <li><a class="icon" href="#"><font-awesome-icon icon="fa-brands fa-instagram" /></a></li>
+                        <li><a class="icon" href="#"><font-awesome-icon icon="fa-brands fa-linkedin" /></a></li>
                     </ul>
                     
                 </div>
@@ -40,13 +40,26 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
 
 .main-header{
-    background-color: aqua;
-    padding: 40px;
+    padding: 28px;
 
     img{
         width: 160px;
+    }
+    .social-icons{
+        font-size: 18px;
+        // gap: 24px;
+    }
+
+    .icon{
+        padding: 0 10px;
+        color: $social-icon;
+    }
+
+    .icon:hover{
+        color: $primary-color;
     }
 }
 .row{
@@ -55,7 +68,8 @@
 }
 
 .menu-list{
-    gap: 10px;
+    font-size: 1rem;
+    gap: 40px;
 }
 
 </style>
