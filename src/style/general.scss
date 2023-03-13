@@ -1,0 +1,39 @@
+// Reset
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul,
+ol,
+menu{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+
+
+// Container
+
+.container-large {
+    max-width: 1422px;
+    margin: 0 auto;
+}
+
+
+// General
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
