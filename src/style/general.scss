@@ -52,6 +52,10 @@ a{
     flex-basis: calc(100% / 4);
 }
 
+.col-6{
+    flex-basis: 50%;
+}
+
 .italics-text{
     font-style: italic;
     font-weight: 200;
@@ -59,7 +63,7 @@ a{
     color: $secondary-color;
 }
 
-
+// Button
 .button{
     font-size: 14px;
     font-weight: bold;
@@ -67,9 +71,24 @@ a{
     line-height: 60px;
     border-radius: 6px;
     text-transform: capitalize;
+    transition-duration: 0.3s;
 }
 
 .button-primary{
+    color: white;
+    background-color: $primary-color;
+}
+
+.button-primary:hover{
+    background-color: $secondary-color;
+}
+
+.button-secondary{
+    color: $primary-color;
+    background-color: #ef703136;
+}
+
+.button-secondary:hover{
     color: white;
     background-color: $primary-color;
 }

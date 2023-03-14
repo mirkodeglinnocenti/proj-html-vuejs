@@ -45,15 +45,16 @@
 .main-header{
     padding: 28px;
     background-color: white;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.185);
     position: sticky;
     top: 0;
+    z-index: 999;
 
     img{
         width: 160px;
     }
     .social-icons{
         font-size: 18px;
-        // gap: 24px;
     }
 
     .icon{
