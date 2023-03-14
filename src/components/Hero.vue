@@ -11,6 +11,9 @@
         <img class="shape5" src="/img/artist-shape-05.png" alt="">
         <img class="shape7" src="/img/shape2.svg" alt="">
         <img class="shape6" src="/img/maxcoach-shape-12.png" alt="">
+        <img class="hero-img1" src="/img/artist-hero-image-04.jpg" alt="">
+        <img class="hero-img2" src="/img/artist-hero-image-02.jpg" alt="">
+        <img class="hero-img3" src="/img/artist-hero-image-01.jpg" alt="">
     </div>
 </section>
 </template>
@@ -94,5 +97,19 @@ export default{
     bottom: 85px;
     right: 430px;
 }
-
+.hero-img1{
+    position: absolute;
+    bottom: 100px;
+    right: 180px;
+}
+.hero-img2{
+    position: absolute;
+    top: 150px;
+    left: 280px;
+}
+.hero-img3{
+    position: absolute;
+    bottom: 110px;
+    left: 180px;
+}
 </style>
