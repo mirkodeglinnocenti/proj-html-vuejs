@@ -45,7 +45,7 @@
 .main-header{
     padding: 28px;
     background-color: white;
-    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.185);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.103);
     position: sticky;
     top: 0;
     z-index: 999;
