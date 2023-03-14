@@ -1,10 +1,7 @@
 <template>
     <section class="testimonial-section">
 
-        <div class="testimonial-header">
-            <p class="italics-text">Testimonials</p>
-            <p class="title-section">Why do people love me?</p>
-        </div>
+        <HeaderSection :header="header" />
 
         <div class="container-xl">
             <div class="row">
@@ -28,9 +25,18 @@
 </template>
 
 <script>
+import HeaderSection from './HeaderSection.vue';
+
 export default{
+    components:{
+        HeaderSection,
+    },
     data(){
         return{
+            header:{
+                title: 'Testimonials',
+                text: 'Why do people love me?'
+            },
             testimonials: [
                 {
                     cardTitle: 'High level of efficiency and scientific teaching methods',

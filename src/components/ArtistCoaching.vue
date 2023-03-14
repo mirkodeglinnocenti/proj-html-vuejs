@@ -1,12 +1,7 @@
 <template>
 <section class="artist-coaching-section">
 
-    <div class="section-text">
-        <div class="container-small">
-            <p class="italics-text">Artist coaching</p>
-            <p class="title-section">I understand what it takes to create. I can help you with</p>
-        </div>
-    </div>
+    <HeaderSection :header="header" />
 
     <div class="service-card">
         <div class="container-medium">
@@ -59,7 +54,7 @@
                     I support artists in crafting and living a creative life as well as feeling good about themselves and their art.
                 </p>
                 <p class="vision-section_text">As an artist and an educator for nearly 30 years, I understand what it takes to create.</p>
-                <span><a class="button button-secondary" href="#">get started today</a></span>
+                <span><a class="button button-secondary" href="#">Get started today</a></span>
 
             </div>
         </div>
@@ -82,8 +77,20 @@
 </template>
 
 <script>
+import HeaderSection from './HeaderSection.vue';
+
 export default{
-    
+    components:{
+        HeaderSection,
+    },
+    data (){
+        return{
+            header: {
+                title: "Artist coaching",
+                text: "I understand what it takes to create. I can help you with"
+            }
+        }
+    }
 }
 </script>
 
@@ -91,18 +98,6 @@ export default{
 
 .artist-coaching-section{
     padding: 50px 0 100px 0;
-    .section-text{
-        text-align: center;
-    }
-    .italics-text{
-        font-size: 48px;
-    }
-
-    .title-section{
-        font-size: 34px;
-        font-weight: 600;
-        margin-bottom: 90px;
-    }
 
     .card{
 

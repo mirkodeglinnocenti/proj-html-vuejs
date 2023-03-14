@@ -1,9 +1,11 @@
 <template>
 <section class="hero-section">
     <div class="container-small">
-        <p class="italics-text">Hello, im Martin</p>
-        <p class="title-hero">Artist coaching and mentoring might be for you.</p>
-        <span><a class="button button-primary" href="#">get started today</a></span>
+        <div class="hero-text">
+            <HeaderSection :header="header "/>
+            <span><a class="button button-primary" href="#">Get started today</a></span>
+        </div>
+        
         <img class="shape2" src="/img/artist-shape-02.png" alt="">
         <img class="shape" src="/img/shape.svg" alt="">
         <img class="shape3" src="/img/artist-shape-03.png" alt="">
@@ -19,12 +21,24 @@
 </template>
 
 <script>
-export default{
+import HeaderSection from './HeaderSection.vue';
 
+export default{
+    components:{
+        HeaderSection
+    },
+    data(){
+        return{
+            header:{
+                title: 'Hello, im Martin',
+                text: 'Artist coaching and mentoring might be for you.'
+            }
+        }
+    }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '../style/partials/variables.scss' as *;
 
 .hero-section{
@@ -34,13 +48,17 @@ export default{
     height: 740px;
     background-color: #FBF9F6;
 
+    .hero-text{
+        position: relative;
+        z-index: 1;
+    }
+
     .italics-text{
         font-size: 64px;
     }
 
-    .title-hero{
+    .title-section{
         font-size: 40px;
-        font-weight: 600;
         text-transform: capitalize;
         margin-bottom: 40px;
     }
