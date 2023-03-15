@@ -3,6 +3,9 @@
 
         <HeaderSection :header="header" />
 
+        <img class="wave" src="/img/wave.svg" alt="">
+
+
         <div class="container-xl">
             <div class="row">
                 <div v-for="(testimonial, index) in testimonials" :key="index" class="card">
@@ -76,8 +79,16 @@ export default{
 @use '../style/partials/variables.scss' as *;
 
 .testimonial-section{
+    position: relative;
     background-color: $background-color;
     padding: 70px 0 85px;
+
+    .wave{
+        position: absolute;
+        top: -300px;
+        left: 0;
+        z-index: -2;
+    }
 
     .testimonial-header{
         text-align: center;

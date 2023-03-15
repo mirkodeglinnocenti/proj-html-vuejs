@@ -8,6 +8,7 @@ import Footer from './components/Footer.vue';
 import NewsLetter from './components/NewsLetter.vue';
 import Articles from './components/Articles.vue';
 import Events from './components/Events.vue';
+import ButtonTop from './components/ButtonTop.vue';
 
 export default {
     components:{
@@ -21,6 +22,7 @@ export default {
     NewsLetter,
     Articles,
     Events,
+    ButtonTop
 }
 }
 </script>
@@ -35,6 +37,7 @@ export default {
   <Events />
   <NewsLetter />
   <Footer />
+  <ButtonTop />
 
 </template>
 

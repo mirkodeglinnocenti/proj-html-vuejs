@@ -35,10 +35,15 @@
                     </div>  
                 </div>
             </div>
-            
         </div>
     </div>
-      
+    
+    <img class="el1" src="/img/maxcoach-shape-14.png" alt="">
+    <img class="el2" src="/img/shape3.svg" alt="">
+    <img class="el3" src="/img/shape4.svg" alt="">
+    <img class="el4" src="/img/maxcoach-shape-13.png" alt="">
+
+
 </section>
 
 <section class="vision-section">
@@ -96,9 +101,12 @@ export default{
 
 <style lang="scss" scoped>
 
+
 .artist-coaching-section{
     padding: 50px 0 100px 0;
-
+    position: relative;
+    overflow: hidden;
+    
     .card{
 
 
@@ -119,6 +127,32 @@ export default{
 
     .bottom{
         padding-top: 50px;
+    }
+    .el1{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: -1;
+    }
+    .el2{ 
+        position: absolute;
+        top: 80px; 
+        left: -180px;
+        width: 735px;
+        transform: rotate(21deg) scale(1, -1);
+        z-index: -2;
+    }
+    .el3{
+        position: absolute;
+        top: 250px;
+        right: 265px;
+        width: 370px;
+        z-index: -2;
+    }
+    .el4{
+        position: absolute;
+        top: 230px;
+        right: -60px;
     }
 }
 

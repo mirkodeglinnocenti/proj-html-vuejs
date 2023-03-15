@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faUser, faFileAlt } from '@fortawesome/free-regular-svg-icons'
-import { faArrowRightLong, faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightLong, faLocationDot, faArrowUpLong} from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebookF, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -24,7 +24,8 @@ library.add(
     faLinkedin, 
     faFileAlt, 
     faArrowRightLong, 
-    faLocationDot
+    faLocationDot,
+    faArrowUpLong,
 )
 
 
