@@ -6,6 +6,7 @@ import Testimonials from './components/Testimonials.vue';
 import ArtistCourses from './components/ArtistCourses.vue';
 import Footer from './components/Footer.vue';
 import NewsLetter from './components/NewsLetter.vue';
+import Articles from './components/Articles.vue';
 
 export default {
     components:{
@@ -17,6 +18,7 @@ export default {
     ArtistCourses,
     Footer,
     NewsLetter,
+    Articles,
 }
 }
 </script>
@@ -27,6 +29,7 @@ export default {
   <ArtistCoaching />
   <Testimonials />
   <ArtistCourses />
+  <Articles />
   <NewsLetter />
   <Footer />
 
