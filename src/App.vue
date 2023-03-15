@@ -5,6 +5,7 @@ import ArtistCoaching from './components/ArtistCoaching.vue';
 import Testimonials from './components/Testimonials.vue';
 import ArtistCourses from './components/ArtistCourses.vue';
 import Footer from './components/Footer.vue';
+import NewsLetter from './components/NewsLetter.vue';
 
 export default {
     components:{
@@ -15,6 +16,7 @@ export default {
     ArtistCoaching,
     ArtistCourses,
     Footer,
+    NewsLetter,
 }
 }
 </script>
@@ -25,6 +27,7 @@ export default {
   <ArtistCoaching />
   <Testimonials />
   <ArtistCourses />
+  <NewsLetter />
   <Footer />
 
 </template>

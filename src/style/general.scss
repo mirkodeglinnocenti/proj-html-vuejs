@@ -71,6 +71,10 @@ a:hover{
     flex-basis: 50%;
 }
 
+.col-8{
+    flex-basis: calc((100% / 12) * 8);
+}
+
 .italics-text{
     font-family: "Rossela Demo", Sans-serif;
     font-weight: 200;
