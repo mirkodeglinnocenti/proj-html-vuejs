@@ -7,6 +7,7 @@ import ArtistCourses from './components/ArtistCourses.vue';
 import Footer from './components/Footer.vue';
 import NewsLetter from './components/NewsLetter.vue';
 import Articles from './components/Articles.vue';
+import Events from './components/Events.vue';
 
 export default {
     components:{
@@ -19,6 +20,7 @@ export default {
     Footer,
     NewsLetter,
     Articles,
+    Events,
 }
 }
 </script>
@@ -30,6 +32,7 @@ export default {
   <Testimonials />
   <ArtistCourses />
   <Articles />
+  <Events />
   <NewsLetter />
   <Footer />
 
