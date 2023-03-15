@@ -1,5 +1,5 @@
 <template>
-    <section class="testimonial-section">
+    <section class="testimonial-section carousel-box">
 
         <HeaderSection :header="header" />
 
@@ -8,7 +8,7 @@
 
         <div class="container-xl">
             <div class="row">
-                <div v-for="(testimonial, index) in testimonials" :key="index" class="card">
+                <div v-for="(testimonial, index) in testimonials" :key="index" class="card" :class="index === indiceSlideAttiva ? '' : 'disable' ">
                     <p class="card-title">{{testimonial.cardTitle}}</p>
                     <p class="card-text">{{ testimonial.cardText }}</p>
                     <div class="card-testimonial">
@@ -21,6 +21,20 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="carousel__arrow arrow-left" @click="leftSlide">
+                <font-awesome-icon icon="fa-solid fa-chevron-left" />
+            </div>
+        
+            <div class="carousel__arrow arrow-right" @click="rightSlide">
+                <font-awesome-icon icon="fa-solid fa-chevron-right" />
+            </div> 
+            <div class="slider-dot">
+                <font-awesome-icon icon="fa-solid fa-circle" :class="0 === indiceSlideAttiva ? '' : 'disable'"/>
+                <font-awesome-icon icon="fa-solid fa-circle" :class="1 === indiceSlideAttiva ? '' : 'disable'"/>
+                <font-awesome-icon icon="fa-solid fa-circle" :class="2 === indiceSlideAttiva ? '' : 'disable'"/>
+                <font-awesome-icon icon="fa-solid fa-circle" :class="3 === indiceSlideAttiva ? '' : 'disable'"/>
             </div>
         </div>
 
@@ -70,12 +84,66 @@ export default{
                     testimonialjob: 'Multimedia Admin'
                 },
             ],
+            indiceSlideAttiva : 1,
         }
+    },
+    methods:{
+        leftSlide,
+        rightSlide,
     }
+}
+
+
+
+
+
+// Slide successiva
+
+function rightSlide() {
+
+
+    if (this.indiceSlideAttiva <  this.testimonials.length - 1){
+
+        this.indiceSlideAttiva++;
+
+
+    } else if (this.indiceSlideAttiva =  this.testimonials.length - 1) {
+
+        this.indiceSlideAttiva = 0;
+
+    }
+
+    console.log('current slide', this.indiceSlideAttiva);
+
+
+}
+
+
+
+// Slide precedente
+
+
+function leftSlide() {
+
+console.log('current slide', this.indiceSlideAttiva);
+
+    if (this.indiceSlideAttiva > 0){
+
+        this.indiceSlideAttiva--;
+
+    } else if (this.indiceSlideAttiva === 0){
+
+        this.indiceSlideAttiva = this.testimonials.length - 1;
+
+    }
+
+    console.log('current slide', this.indiceSlideAttiva);
+
+
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @use '../style/partials/variables.scss' as *;
 
 .testimonial-section{
@@ -83,30 +151,36 @@ export default{
     background-color: $background-color;
     padding: 70px 0 85px;
 
+    .title-section{
+        margin-bottom: 50px;
+    }
     .wave{
         position: absolute;
         top: -300px;
         left: 0;
         z-index: -2;
     }
-
-    .testimonial-header{
-        text-align: center;
-    }
-    .italics-text{
-        font-size: 48px;
-    }
-
-    .title-section{
-        font-size: 34px;
-        font-weight: 600;
-        margin-bottom: 50px;
-    }
     .row{
         flex-wrap: nowrap;
+        overflow-x: auto;
         gap: 40px;
     }
+    .slider-dot{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        gap: 10px;
+        .fa-circle{
+            font-size: 10px;
+        }
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
     .card{
+        flex-basis: 570px;
+        flex-shrink: 0;
         padding: 48px 50px 68px 50px;
         background-color: white;
 
@@ -143,6 +217,29 @@ export default{
             }
         }
     }
+}
+
+.disable{
+    opacity: 0.4;
+}
+.carousel-box {
+	position: relative;
+}
+
+.carousel-box .carousel__arrow {
+    font-size: 30px;
+    padding: 5px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-box .carousel__arrow.arrow-left {
+	left: 15px;
+}
+
+.carousel-box .carousel__arrow.arrow-right {
+	right: 15px;
 }
 
 </style>

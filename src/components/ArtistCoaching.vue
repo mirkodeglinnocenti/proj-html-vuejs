@@ -16,22 +16,22 @@
                 <div class="col-3">
                     <div class="card bottom">
                         <img src="/img/artist-box-image-02.png" alt="immagine">
-                        <h4 class="card-title">Online Courses</h4>
-                        <p class="card-text">Online art coaching now offers you a very powerful way to redesign your artist mind.</p>
+                        <h4 class="card-title">One to One</h4>
+                        <p class="card-text">Getting the necessary clarity about the current state to help you improve your ability.</p>
                     </div>  
                 </div>
                 <div class="col-3">
                     <div class="card">
                         <img src="/img/artist-box-image-03.png" alt="immagine">
-                        <h4 class="card-title">Online Courses</h4>
-                        <p class="card-text">Online art coaching now offers you a very powerful way to redesign your artist mind.</p>
+                        <h4 class="card-title">Anywhere</h4>
+                        <p class="card-text">Access to valuable and portable program which allow you to setup and live anywhere you want.</p>
                     </div>  
                 </div>
                 <div class="col-3 bottom">
                     <div class="card">
                         <img src="/img/artist-box-image-04.png" alt="immagine">
-                        <h4 class="card-title">Online Courses</h4>
-                        <p class="card-text">Online art coaching now offers you a very powerful way to redesign your artist mind.</p>
+                        <h4 class="card-title">On Time</h4>
+                        <p class="card-text">Punctuality is our top priority because it's an essential criteria to assess a program quality.</p>
                     </div>  
                 </div>
             </div>
@@ -100,7 +100,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
-
+@use '../style/partials/variables.scss' as *;
 
 .artist-coaching-section{
     padding: 50px 0 100px 0;
@@ -112,10 +112,14 @@ export default{
 
         .card-title{
             font-size: 20px;
+            color: $text-bold;
+            margin-bottom: 10px;
         }
 
         .card-text{
             font-size: 15px;
+            line-height: 25px;
+            color: #4d4d4d;
         }
     }
     .row{
@@ -160,12 +164,13 @@ export default{
     padding: 90px;
     .quote-col{
         text-align: center;
-        padding-right: 160px;
+        padding-right: 140px;
     }
     .vision-section_describe{
-        align-self: flex-end;                   // da controllare
+        align-self: flex-end;              
     }
     .title-section{
+        font-family: "Gilroy-Bold", sans-serif;
         font-size: 48px;
         position: relative;
     }
@@ -191,7 +196,13 @@ export default{
     .video-box{
     max-width: 970px;
     margin: 0 auto;
+    }
 }
+
+.service-card{
+    img{
+        margin-bottom: 10px;
+    }
 }
 
 </style>

@@ -57,7 +57,7 @@ export default{
                 {
                 src: '/img/artist-blog-02-500x680.jpg',
                 category: 'Artist',
-                title: 'Brush Strokes Energize Trees in Paintings',
+                title: 'Connection Between Self-Portraits and Identity',
                 date: 'May 15, 2020',
                 views: '1,722'
                 },
@@ -122,7 +122,7 @@ export default{
         .card-description{
             position: absolute;
             bottom: 0;
-            padding: 20px 38px 54px;
+            padding: 20px 34px 54px;
             background-color: transparent;
         }
         .card-category{

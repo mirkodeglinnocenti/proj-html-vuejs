@@ -26,7 +26,12 @@
             </div>
             
             <div class="button-box">
-                <span><a class="button button-secondary" href="#">Get started today</a></span>
+                <span>
+                    <a class="button button-secondary" href="#">
+                        View all courses
+                        <font-awesome-icon class="input-icon" icon="fa-solid fa-arrow-right-long" />
+                    </a>
+                </span>
             </div>
 
         </div>
@@ -137,6 +142,10 @@ export default{
             transform: scale(1.1);
             transition-duration: 0.8s;
         }
+    }
+
+    .input-icon{
+        padding-left: 5px;
     }
 
     .card-img{
