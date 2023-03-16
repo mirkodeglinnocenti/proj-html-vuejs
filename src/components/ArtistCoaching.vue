@@ -78,6 +78,9 @@
             </iframe>
         </div>
     </div>
+    <img class="el5" src="/img/shape.svg" alt="">
+    <img class="el6" src="/img/maxcoach-shape-05.png" alt="">
+    <img class="el7" src="/img/maxcoach-shape-05.png" alt="">
 </section>
 </template>
 
@@ -172,6 +175,8 @@ export default{
     .title-section{
         font-family: "Gilroy-Bold", sans-serif;
         font-size: 48px;
+        line-height: 65px;
+        color: $text-bold;
         position: relative;
     }
     .title-section::before{
@@ -186,16 +191,36 @@ export default{
         font-size: 48px;
     }
     .vision-section_text{
+        color: $text-color;
         font-size: 18px;
         margin-bottom: 40px;
     }
 }
 
 .video-section{
+    position: relative;
     padding: 90px;
     .video-box{
     max-width: 970px;
     margin: 0 auto;
+    }
+    .el5{
+    position: absolute;
+    top: 50px;
+    left: 380px;
+    z-index: -1;
+    }
+    .el6{
+    position: absolute;
+    top: 90px;
+    left: 340px;
+    z-index: -1;
+    }
+    .el7{
+    position: absolute;
+    bottom: 200px;
+    right: 380px;
+    z-index: -1;
     }
 }
 

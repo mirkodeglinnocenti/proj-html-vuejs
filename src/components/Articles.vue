@@ -3,6 +3,12 @@
 
     <HeaderSection :header="header"/>
 
+    <img class="el1" src="/img/maxcoach-shape-03-d.png" alt="">
+    <img class="el2" src="/img/maxcoach-shape-05.png" alt="">
+    <img class="el3" src="/img/shape.svg" alt="">
+
+
+
     <div class="container-medium">
         <div class="row">
             <div class="col-3 col-left">
@@ -15,6 +21,8 @@
                 <Card :card="cards[2]" />
             </div>
         </div>
+
+       
 
 
     </div>
@@ -78,6 +86,7 @@ export default{
 @use '../style/partials/variables.scss' as *;
 
 .article-section{
+    position: relative;
     padding: 90px 0 60px;
     background-color: $background-color;
 
@@ -87,6 +96,7 @@ export default{
     }
     .col-3{
         flex-basis: 280px;
+        position: relative;
     }
     .col-left{
         padding-top: 160px;
@@ -111,6 +121,22 @@ export default{
         .input-icon{
             font-size: 16px;
         }
+    }
+    .el1{
+        position: absolute;
+        bottom: 350px;
+        left: 0;
+        z-index: 0;
+    }
+    .el2{
+        position: absolute;
+        top: 260px;
+        left: 600px;
+    }
+    .el3{
+        position: absolute;
+        bottom: 80px;
+        right: 600px;
     }
 
 }
