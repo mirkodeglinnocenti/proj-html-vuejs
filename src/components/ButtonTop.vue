@@ -1,7 +1,11 @@
 <template>
-    <div @click="turnOnTop" class="circolar-button" >
-        <font-awesome-icon icon="fa-solid fa-arrow-up-long" />
-    </div>
+    <a href="#"> 
+        <div @click="turnOnTop" class="circolar-button" >
+            
+            <font-awesome-icon class="arrow-icon" icon="fa-solid fa-arrow-up-long" />
+            
+        </div>
+    </a>
 </template>
 
 <script>
@@ -30,5 +34,14 @@ export default{
     align-items: center;
     bottom: 30px;
     right: 20px;
+}
+.arrow-icon{
+    transition-duration: 0.8s;
+}
+.circolar-button:hover{
+    .arrow-icon{
+        transform: translateY(-5px);
+        transition-duration: 0.8s;
+    }
 }
 </style>

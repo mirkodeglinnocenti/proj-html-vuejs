@@ -34,7 +34,7 @@
                 <font-awesome-icon icon="fa-solid fa-circle" :class="0 === indiceSlideAttiva ? '' : 'disable'"/>
                 <font-awesome-icon icon="fa-solid fa-circle" :class="1 === indiceSlideAttiva ? '' : 'disable'"/>
                 <font-awesome-icon icon="fa-solid fa-circle" :class="2 === indiceSlideAttiva ? '' : 'disable'"/>
-                <font-awesome-icon icon="fa-solid fa-circle" :class="3 === indiceSlideAttiva ? '' : 'disable'"/>
+                <!-- <font-awesome-icon icon="fa-solid fa-circle" :class="3 === indiceSlideAttiva ? '' : 'disable'"/> -->
             </div>
         </div>
 
@@ -76,13 +76,13 @@ export default{
                     testimonialName: 'Luvic Dubble',
                     testimonialjob: '/ Private Tutor'
                 },
-                {
-                    cardTitle: 'It\'s a choice of quality for people with special needs',
-                    cardText: 'I\'m a very strict person so I require everything to be organized and neat. Then, I\'ll be able to make things right and shine. MaxCoach guys just got me.',
-                    src: '/img/artist-testimonial-avatar-02.jpg',
-                    testimonialName: 'Florence Themes',
-                    testimonialjob: 'Multimedia Admin'
-                },
+                // {
+                //     cardTitle: 'It\'s a choice of quality for people with special needs',
+                //     cardText: 'I\'m a very strict person so I require everything to be organized and neat. Then, I\'ll be able to make things right and shine. MaxCoach guys just got me.',
+                //     src: '/img/artist-testimonial-avatar-02.jpg',
+                //     testimonialName: 'Florence Themes',
+                //     testimonialjob: 'Multimedia Admin'
+                // },
             ],
             indiceSlideAttiva : 1,
         }
